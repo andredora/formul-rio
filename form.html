@@ -1,0 +1,31 @@
+
+<h3>Formulário</h3>
+<form class="row g-3 needs-validation" novalidate action="http://192.168.160.36/FormEcho.aspx" method="post">
+    <div class="col-md-4 form-floating">
+        <input type="text" class="form-control" name="FirstName" id="validationCustom01" value="José Maria" pattern=".{3,}" required>
+        <label for="validationCustom01" class="form-label">Nome</label>
+        <div class="invalid-feedback">Insira o primeiro nome.</div>
+        <div class="valid-feedback">Perfeito!</div>
+    </div>
+    <div class="col-md-4 form-floating">
+        <input type="text" class="form-control" name="LastName" id="validationCustom02" value="da Silva Pincel" pattern=".{3,}" required>
+        <label for="validationCustom02" class="form-label">Sobrenome</label>
+        <div class="invalid-feedback">Insira o último nome.</div>
+        <div class="valid-feedback">Perfeito!</div>
+    </div>
+    <div class="col-md-4 form-floating">
+        <input type="email" class="form-control" name="Username" id="validationCustomUsername" required>
+        <label for="validationCustomUsername" class="form-label">Username</label>
+        <div class="invalid-feedback">Insira um email válido.</div>
+    </div>
+    <div class="col-md-6 form-floating">
+        <input type="text" name="City" class="form-control" id="validationCustom03" pattern="[A-Z,a-z]{3,}" required>
+        <label for="validationCustom03" class="form-label">Cidade</label>
+        <div class="invalid-feedback">Insira o nome de uma cidade (mínimo de 3 letras).</div>
+    </div>
+    (…)
+    <div class="col-12">
+        <button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-save"></i> Enviar Formulário</button>
+        <button class="btn btn-danger btn-sm" type="reset"><i class="fa fa-trash-o"></i> Limpar Formulário</button>
+    </div>
+</form>
